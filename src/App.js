@@ -8,8 +8,22 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Robert Holden</h1>
-      </div>
+        <header>
+          <div className="wrapper">
+            <div className="headerBrand">
+              <h2>Robert Holden</h2>
+            </div>
+            <nav className="headerNav">
+              <ul>
+                <li>About Me</li>
+                <li>Portfolio</li>
+                <li>Experience</li>
+                <li>Contact</li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div >
     );
   }
 }
