@@ -5,9 +5,27 @@ import './styles/typography.css';
 import './styles/app.css';
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.handleScroll = this.handleScroll.bind(this);
+
+    this.state = {
+      themeAmbiance: 'blue',
+    };
+  }
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
   render() {
     return (
-      <div className="App">
+      <div className={`background ${this.state.themeAmbiance}`}>
         <header>
           <div className="wrapper">
             <div className="headerBrand">
@@ -15,56 +33,79 @@ class App extends Component {
             </div>
             <nav className="headerNav">
               <ul>
-                <li>About Me</li>
-                <li>Portfolio</li>
-                <li>Experience</li>
-                <li>Contact</li>
+                <li><a href="#aboutMeSection">About Me</a></li>
+                <li><a href="#portfolioSection">Portfolio</a></li>
+                <li><a href="#experienceSection">Experience</a></li>
+                <li><a href="#contactSection">Contact</a></li>
               </ul>
             </nav>
           </div>
         </header>
         <div className="wrapper">
-          <section id="aboutMeSection" className="card">
+          <section ref={(el) => this.aboutMeSection = el} id="aboutMeSection" className="card">
             <h3>About Me</h3>
             <hr />
+            <img src="/images/Headshot small.jpg" alt="Headshot" className="inlineImage"></img>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-               aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-               occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-               aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-               occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-               aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+               aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </section>
-          <section id="aboutMeSection" className="card">
-            <h3>About Me</h3>
+          <section ref={(el) => this.portfolioSection = el} id="portfolioSection" className="card">
+            <h3>Portfolio</h3>
             <hr />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-               aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+               aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
+          </section>
+          <section ref={(el) => this.experienceSection = el} id="experienceSection" className="card">
+            <h3>Experience</h3>
+            <hr />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-               aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+               aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-               aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-               occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+          </section>
+          <section id="contactSection" className="card">
+            <h3>Contact</h3>
+            <hr />
+            <p><strong>Email : </strong><a href="mailto:robert@robhold.com">robert@robhold.com</a></p>
+            <p><strong>Phone : </strong><a href="tel:+14045029135">(404) 502-9135</a></p>
+            <p><strong>Github : </strong><a href="https://github.com/RFHold">github.com/RFHold</a></p>
           </section>
         </div>
       </div >
     );
+  }
+
+  hasBeenScrolledPast(el, offset = 0) {
+    if (el) {
+      const top = el.getBoundingClientRect().top;
+      let past = false
+      if ((top - offset) < 0) {
+        past = true
+      }
+      return past;
+    }
+  }
+
+  handleScroll(event) {
+    const offset = window.innerHeight * 0.8;
+    let color = 'purple';
+
+    if (this.hasBeenScrolledPast(this.experienceSection, offset)) {
+      color = 'green';
+    } else if (this.hasBeenScrolledPast(this.portfolioSection, offset)) {
+      color = 'blue';
+    };
+
+    this.setState({
+      themeAmbiance: color,
+    });
   }
 }
 
