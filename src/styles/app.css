@@ -1,0 +1,196 @@
+/* Global */
+
+html,body, #root, .App {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+.background::before {
+  content: "";
+  position: fixed;
+  z-index: -100;
+  width: 100%;
+  height: 100%;
+  background: 
+  linear-gradient(45deg,  transparent 0%, transparent 57%, #0a5b3c 100%),
+  linear-gradient(-45deg, #468f59 0%,  #2d90a8 0.3%, #6b119b 112%,  transparent 11% ),
+  linear-gradient(-90deg, #2d90a8 100%, #2d90a8 65%, transparent 20% );
+  transition: all 2s ease-in-out;
+  background-size: 400%; 
+}
+
+.blue.background::before {
+  background-position: center bottom;
+
+}
+
+.green.background::before {
+  background-position: top right;
+
+}
+
+.purple.background::before {
+  background-position: top left;
+
+}
+
+/* Header and Nav */
+
+header{
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.headerBrand{
+  box-sizing: border-box;
+  height: 35px;
+  float: left;
+}
+
+.headerNav{
+  box-sizing: border-box;
+  height: 35px;
+  float: right;
+  line-height: 35px;
+}
+
+.headerNav ul{
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.headerNav li{
+  box-sizing: border-box;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+.headerNav a {
+  text-decoration: none;
+  color: #eee;
+}
+
+.headerNav a:hover {
+  color: #ddd;
+}
+
+/* Layout */
+
+.card{
+  background: rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  margin: 10px;
+  box-sizing: border-box;
+  overflow: auto;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.projectImage {
+  border-radius: inherit;
+  width: 100%;
+}
+
+.subContainer {
+  margin: 5px 0;
+  padding: 5px 0;
+}
+
+.inlineImage{
+  float: left;
+  width: 400px;
+  border-radius: 3px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.flexBetween{
+  display: flex;
+  justify-content: space-between
+}
+
+.inlineImage.small{
+  width: 250px;
+}
+
+/* Responsive */
+
+header > .wrapper{
+  height: 65px;
+  padding: 15px;
+}
+
+.wrapper{
+  box-sizing: border-box;
+  overflow: auto;
+  max-width: 960px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Large devices (992px and down) */
+@media only screen and (max-width: 960px) {
+  .card{
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.3);
+  }
+} 
+
+/* Medium devices (768px and down) */
+@media only screen and (max-width: 768px) {
+  .inlineImage{
+    width: 200px;
+  }
+} 
+
+/* Small devices (640px and down) */
+@media only screen and (max-width: 640px) {
+
+  header > .wrapper{
+    height: 100px;
+  }
+
+  .headerBrand{
+    float: unset;
+    text-align: center;
+  }
+  
+  .headerNav{
+    float: unset;
+    text-align: center;
+  }
+  
+} 
+
+/* Tiny devices (412px and down) */
+@media only screen and (max-width: 412px) {
+
+  header > .wrapper{
+    height: 135px;
+  }
+  .inlineImage{
+    width: 100%;
+    float: unset;
+  }
+  
+} 
