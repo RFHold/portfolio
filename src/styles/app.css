@@ -108,12 +108,21 @@ header{
   width: 100%;
 }
 
+.projectContainer {
+  margin: 5px;
+  padding: 5px;
+}
+
 .inlineImage{
   float: left;
   width: 400px;
   border-radius: 3px;
   margin-right: 20px;
   margin-bottom: 10px;
+}
+
+.inlineImage.small{
+  width: 250px;
 }
 
 /* Responsive */
