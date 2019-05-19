@@ -1,0 +1,29 @@
+version: '3.0'
+services:
+  nginx-proxy:
+    image: jwilder/nginx-proxy:0.4.0
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - "/etc/nginx/vhost.d:/etc/nginx/vhost.d"
+      - "/usr/share/nginx/html:/usr/share/nginx/html"
+      - "/var/run/docker.sock:/tmp/docker.sock:ro"
+      - "/etc/nginx/certs:/etc/nginx/certs"
+    restart: always
+  letsencrypt-nginx-proxy-companion:
+    image: jrcs/letsencrypt-nginx-proxy-companion:v1.11.1
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+    volumes_from:
+      - "nginx-proxy"
+    restart: always
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      VIRTUAL_HOST: robhold.com
+      LETSENCRYPT_HOST: robhold.com
+      LETSENCRYPT_EMAIL: robert@robhold.com
+    restart: always
