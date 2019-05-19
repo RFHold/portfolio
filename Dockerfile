@@ -5,7 +5,6 @@ WORKDIR /usr/src/app
 # Copy dependency info
 COPY package*.json ./
 COPY yarn.lock ./
-COPY lerna.json ./
 
 # Install production dependencies
 RUN yarn install --only=production
