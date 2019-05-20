@@ -88,6 +88,13 @@ class App extends Component {
 								As the Lead Sales Associate I communicated with customers about their repair and order status as well as maintain the store to both optimize workflow and display our products effectively. My time at Cellairis tested my ability
 								to multitask and communicate with the rest of my team.</p>
             </div>
+            <div className="subContainer">
+              <div className="flexBetween">
+                <h3>FRC Robotics</h3> <sub>3 Seasons <strong>Lead Programmer/Electrical</strong></sub>
+              </div>
+              <p>During 3 of my years in highschool, I lead the programming team for team 4749 in FRC Robotics. Throughout my time there, I utilized Java and C++ to program a control interface, perform vision processing, and communicate with motor
+                controllers or other modules.</p>
+            </div>
 					</section>
 					<section ref={(el) => this.educationSection = el} id="educationSection" className="card">
 						<h2>Education</h2>
