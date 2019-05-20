@@ -49,7 +49,7 @@ class App extends Component {
 						<p>With a passion for solving problems I started my career path early in highschool with my first job building website templates. I enjoy the logistical aspect of programming with every day being a new opportunity
                			  for something great. I am a quick and focused learner who actively looks and avoids complications before they become a roadblock. I am looking for a place to let me express my best concepts and use my skills to their fullest potential.</p><br />
 						<p>I am currently attending Georgia Tech's Fullstack coding bootcamp. This course will refine my current knowledge gained from previous projects and jobs and help launch my career. I started off building CSS templates, and then
-						  I quickly moved on to more complicated tasks. I started building custom modules for customer sites. Eventually I transitioned to a position in the company in which I was collaborating with a team to design, build and
+						  I quickly moved on to building custom modules for customer sites. Eventually I transitioned to a position in the company in which I was collaborating with a team to design, build and
 						  deploy an internal management application.</p>
 					</section>
 					<section ref={(el) => this.portfolioSection = el} id="portfolioSection" className="card">
@@ -78,16 +78,16 @@ class App extends Component {
 							<p>
 								I started work at 501CiO making css templates for client websites. Six months later I began developing a time-sheet and invoicing system for internal use. During development I got ample experience with languages such as PHP, Ruby,
 								 and JavaScript. I also utilized MySQL, Rails, Node.js, Angular.js and many other technologies. As lead developer, I used my creative thinking and ambitious personality to solve problems and fabricate a great user experience.</p>
-						</div>
-						<div className="subContainer">
-							<div className="flexBetween">
-								<h3>Cellairis</h3> <sub>8 Months <strong>Lead Sales/Repair Tech</strong></sub>
-							</div>
-							<p>
-								At Cellairis I was charged with repairing customer devices which included replacing or repairing components, troubleshooting software issues, data recovery, and cleaning PCs. On top of being a repair tech, I was also Lead Sales.
+            </div>
+            <div className="subContainer">
+              <div className="flexBetween">
+                <h3>Cellairis</h3> <sub>8 Months <strong>Lead Sales/Repair Tech</strong></sub>
+              </div>
+              <p>
+                At Cellairis I was charged with repairing customer devices which included replacing or repairing components, troubleshooting software issues, data recovery, and cleaning PCs. On top of being a repair tech, I was also Lead Sales.
 								As the Lead Sales Associate I communicated with customers about their repair and order status as well as maintain the store to both optimize workflow and display our products effectively. My time at Cellairis tested my ability
 								to multitask and communicate with the rest of my team.</p>
-						</div>
+            </div>
 					</section>
 					<section ref={(el) => this.educationSection = el} id="educationSection" className="card">
 						<h2>Education</h2>
@@ -106,7 +106,7 @@ class App extends Component {
 									<div className="flexBetween">
 										<h3>Georgia Tech Bootcamp</h3> <sub>Higher Education</sub>
 									</div>
-									<p>currently attending Georgia Tech Fullstack Coding Bootcamp (expected graduation July 1, 2019)</p>
+									<p>Currently attending Georgia Tech Fullstack Coding Bootcamp (expected graduation July 1, 2019)</p>
 								</div>
 							</div>
 						</div>
