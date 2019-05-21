@@ -32,6 +32,8 @@ Graduated from Mount Pisgah Christian School May 2018
 Higher Education
 Currently attending Georgia Tech Fullstack Coding Bootcamp (expected graduation July 1, 2019)
 
+### Contact
+
 * Email : robert@robhold.com
 * Phone : (404) 502-9135
 * Github : github.com/RFHold
