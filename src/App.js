@@ -57,11 +57,14 @@ class App extends Component {
 							<div className="col-12">
 								<div className="subContainer">
 									<img src="/images/watchpad-logo.jpg" className="projectImage inlineImage small" alt="watchPad Logo"></img>
-									<h3>WatchPad</h3>
+
+									<div className="flexBetween">
+										<h3>WatchPad</h3>
+										<a href="https://rfhold.github.io/bc-project-1/" className="button">Live Project</a>
+									</div>
 									<p>
 										WatchPad is a simple tool which allows the user to organize and keep track of movies and tv shows that they want to watch. Combining apis such as The Movie Database and TV Database to allow the user to search the ever expanding collection
 										of todays media. With future plans to integrate with media servers such as Plex and Emby, WatchPad will be a great asset to anyone looking to create their own media server.</p>
-									<a href="https://rfhold.github.io/bc-project-1/" className="button">Live Project</a>
 								</div>
 							</div>
 						</div>
@@ -71,7 +74,7 @@ class App extends Component {
 						<hr />
 						<div className="subContainer">
 							<div className="flexBetween">
-								<h3>501CiO Consulting</h3> <sub>3 Years <strong>Fullstack Developer</strong></sub>
+								<h3>501CiO Consulting</h3> <sub className="stamp">3 Years <strong>Fullstack Developer</strong></sub>
 							</div>
 							<p>
 								I started work at 501CiO making css templates for client websites. Six months later I began developing a time-sheet and invoicing system for internal use. During development I got ample experience with languages such as PHP, Ruby,
@@ -79,7 +82,7 @@ class App extends Component {
 						</div>
 						<div className="subContainer">
 							<div className="flexBetween">
-								<h3>Cellairis</h3> <sub>8 Months <strong>Lead Sales/Repair Tech</strong></sub>
+								<h3>Cellairis</h3> <sub className="stamp" >8 Months <strong>Lead Sales/Repair Tech</strong></sub>
 							</div>
 							<p>
 								At Cellairis I was charged with repairing customer devices which included replacing or repairing components, troubleshooting software issues, data recovery, and cleaning PCs. On top of being a repair tech, I was also Lead Sales.
@@ -88,7 +91,7 @@ class App extends Component {
 						</div>
 						<div className="subContainer">
 							<div className="flexBetween">
-								<h3>FRC Robotics</h3> <sub>3 Seasons <strong>Lead Programmer/Electrical</strong></sub>
+								<h3>FRC Robotics</h3> <sub className="stamp">3 Seasons <strong>Lead Programmer/Electrical</strong></sub>
 							</div>
 							<p>During 3 of my years in highschool, I lead the programming team for team 4749 in FRC Robotics. Throughout my time there, I utilized Java and C++ to program a control interface, perform vision processing, and communicate with motor
                 				controllers or other modules.</p>
@@ -98,20 +101,20 @@ class App extends Component {
 						<h2>Education</h2>
 						<hr />
 						<div className="row">
-							<div className="col-12 col-lg-6">
+							<div className="col-12 col-lg-6 mx-2">
 								<div className="subContainer">
 									<div className="flexBetween">
-										<h3>Mount Pisgah Christian School</h3> <sub>Highschool</sub>
+										<h3>Mount Pisgah Christian School</h3> <sub className="stamp"><strong>Highschool</strong></sub>
 									</div>
 									<p>Graduated from Mount Pisgah Christian School May 2018</p>
 								</div>
 							</div>
-							<div className="col-12 col-lg-6">
+							<div className="col-12 col-lg-6 mx-2">
 								<div className="subContainer">
 									<div className="flexBetween">
-										<h3>Georgia Tech Bootcamp</h3> <sub>Higher Education</sub>
+										<h3>Georgia Tech Bootcamp</h3> <sub className="stamp"><strong>Higher Education</strong></sub>
 									</div>
-									<p>Currently attending Georgia Tech Fullstack Coding Bootcamp (expected graduation July 1, 2019)</p>
+									<p>Currently attending Georgia Tech Fullstack Coding Bootcamp (graduation July 1, 2019)</p>
 								</div>
 							</div>
 						</div>
@@ -119,7 +122,7 @@ class App extends Component {
 					<section ref={(el) => this.skillsSection = el} id="skillsSection" className="card">
 						<h2>Skills</h2>
 						<hr />
-						<div className="row">
+						<div className="row separatedRow-4-2">
 							<div className="col-6 col-md-3">
 								<div className="flexBetween">
 									<h4>JavaScript</h4>
@@ -194,7 +197,7 @@ class App extends Component {
 							</div>
 						</div>
 						<br />
-						<div className="row">
+						<div className="row separatedRow-4-2">
 							<div className="col-6 col-md-3">
 								<div className="flexBetween">
 									<h4>Creative</h4>

@@ -110,7 +110,7 @@ header{
 
 .subContainer {
   margin: 5px 0;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 
 .inlineImage{
@@ -130,6 +130,33 @@ header{
   width: 250px;
 }
 
+.mx-2 > div{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.stamp{
+  background: rgba(255, 255, 255, 0.5);
+  color: #111;
+  border-radius: 5px;
+  padding: 5px;
+  height: 21.5px;
+  margin: 6px;
+}
+
+.button{
+  background: rgba(255, 255, 255, 0.5);
+  color: #111 !important;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 9px;
+  display: inline-block;
+}
+
+.button:hover{
+  background: rgba(255, 255, 255, 0.6);
+}
 /* Responsive */
 
 header > .wrapper{
@@ -146,6 +173,9 @@ header > .wrapper{
   margin-right: auto;
 }
 
+.separatedRow-4-2 > div:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.1)
+}
 /* Large devices (992px and down) */
 @media only screen and (max-width: 960px) {
   .card{
@@ -161,6 +191,13 @@ header > .wrapper{
   .inlineImage{
     width: 200px;
   }
+  .separatedRow-4-2 > div:nth-child(odd) {
+    border-right: 1px solid rgba(255, 255, 255, 0.1)
+  }
+  .separatedRow-4-2 > div:nth-child(even) {
+    border-right: none
+  }
+
 } 
 
 /* Small devices (640px and down) */
