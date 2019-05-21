@@ -212,13 +212,13 @@ class App extends Component {
 							</div>
 							<div className="col-6 col-md-3">
 								<div className="flexBetween">
-									<h4>Communication</h4>
+									<h4>Dedicated</h4>
 									<code>10/10</code>
 								</div>
 							</div>
 							<div className="col-6 col-md-3">
 								<div className="flexBetween">
-									<h4>Dedicated</h4>
+									<h4>Communication</h4>
 									<code>10/10</code>
 								</div>
 							</div>
