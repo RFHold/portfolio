@@ -1,69 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Robert Holden's Portfolio
 
-## Available Scripts
+This is my portfolio. There are many like it, but this one is mine.
 
-In the project directory, you can run:
+### About Me
+With a passion for solving problems I started my career path early in highschool with my first job building website templates. I enjoy the logistical aspect of programming with every day being a new opportunity for something great. I am a quick and focused learner who actively looks and avoids complications before they become a roadblock. I am looking for a place to let me express my best concepts and use my skills to their fullest potential.
 
-### `npm start`
+### Portfolio
+#### WatchPad
+WatchPad is a simple tool which allows the user to organize and keep track of movies and tv shows that they want to watch. Combining apis such as The Movie Database and TV Database to allow the user to search the ever expanding collection of todays media. With future plans to integrate with media servers such as Plex and Emby, WatchPad will be a great asset to anyone looking to create their own media server.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Experience
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+#### 501CiO Consulting
+3 Years Fullstack Developer
+I started work at 501CiO making css templates for client websites. Six months later I began developing a time-sheet and invoicing system for internal use. During development I got ample experience with languages such as PHP, Ruby, and JavaScript. I also utilized MySQL, Rails, Node.js, Angular.js and many other technologies. As lead developer, I used my creative thinking and ambitious personality to solve problems and fabricate a great user experience.
 
-### `npm test`
+#### Cellairis
+8 Months Lead Sales/Repair Tech
+At Cellairis I was charged with repairing customer devices which included replacing or repairing components, troubleshooting software issues, data recovery, and cleaning PCs. On top of being a repair tech, I was also Lead Sales. As the Lead Sales Associate I communicated with customers about their repair and order status as well as maintain the store to both optimize workflow and display our products effectively. My time at Cellairis tested my ability to multitask and communicate with the rest of my team.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### FRC Robotics
+3 Seasons Lead Programmer/Electrical
+During 3 of my years in highschool, I lead the programming team for team 4749 in FRC Robotics. Throughout my time there, I utilized Java and C++ to program a control interface, perform vision processing, and communicate with motor controllers or other modules.
 
-### `npm run build`
+### Education
+#### Mount Pisgah Christian School
+Highschool
+Graduated from Mount Pisgah Christian School May 2018
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Georgia Tech Bootcamp
+Higher Education
+Currently attending Georgia Tech Fullstack Coding Bootcamp (expected graduation July 1, 2019)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# portfolio
+* Email : robert@robhold.com
+* Phone : (404) 502-9135
+* Github : github.com/RFHold
