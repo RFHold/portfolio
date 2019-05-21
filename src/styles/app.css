@@ -115,7 +115,7 @@ header{
 
 .inlineImage{
   float: left;
-  width: 400px;
+  width: 250px;
   border-radius: 3px;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -124,10 +124,6 @@ header{
 .flexBetween{
   display: flex;
   justify-content: space-between
-}
-
-.inlineImage.small{
-  width: 250px;
 }
 
 .mx-2 > div{
@@ -140,7 +136,6 @@ header{
   color: #111;
   border-radius: 5px;
   padding: 5px;
-  height: 21.5px;
   margin: 6px;
 }
 
@@ -216,6 +211,11 @@ header > .wrapper{
     float: unset;
     text-align: center;
   }
+
+  .inlineImage{
+    width: 100%;
+    float: unset;
+  }
   
 } 
 
@@ -224,10 +224,6 @@ header > .wrapper{
 
   header > .wrapper{
     height: 135px;
-  }
-  .inlineImage{
-    width: 100%;
-    float: unset;
   }
   
 } 
