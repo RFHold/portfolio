@@ -60,12 +60,12 @@ class App extends Component {
 
 									<div className="flexBetween">
 										<h3>WatchPad</h3>
-										<a href="https://rfhold.github.io/bc-project-1/" className="button">Live Project</a>
+										<a href="https://rfhold.github.io/watchpad-poc/" className="button">Live Project</a>
 									</div>
 									<p>
 										WatchPad is a simple tool which allows the user to organize and keep track of movies and tv shows that they want to watch. Combining apis such as The Movie Database and TV Database to allow the user to search the ever expanding collection
 										of todays media. With future plans to integrate with media servers such as Plex and Emby, WatchPad will be a great asset to anyone looking to create their own media server.</p>
-									<a href="https://rfhold.github.io/bc-project-1/">Link to project</a>
+									<a href="https://github.com/RFHold/watchpad-poc">Link to project</a>
 								</div>
 							</div>
 						</div>
