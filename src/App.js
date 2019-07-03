@@ -60,12 +60,12 @@ class App extends Component {
 
 									<div className="flexBetween">
 										<h3>WatchPad</h3>
-										<a href="https://rfhold.github.io/watchpad-poc/" className="button">Live Project</a>
 									</div>
 									<p>
 										WatchPad is a simple tool which allows the user to organize and keep track of movies and tv shows that they want to watch. Combining apis such as The Movie Database and TV Database to allow the user to search the ever expanding collection
 										of todays media. With future plans to integrate with media servers such as Plex and Emby, WatchPad will be a great asset to anyone looking to create their own media server.</p>
-									<a href="https://github.com/RFHold/watchpad-poc">Link to project</a>
+									<a href="https://rfhold.github.io/watchpad-poc/">Deployed</a>&nbsp;&nbsp;
+									<a href="https://github.com/RFHold/watchpad-poc">Github</a>
 								</div>
 							</div>
 						</div>
@@ -76,30 +76,31 @@ class App extends Component {
 
 									<div className="flexBetween">
 										<h3>DiaLOG</h3>
-										<a href="https://dialog-application.herokuapp.com/" className="button">Live Project</a>
 									</div>
 									<p>DiaLOG is a web based group chat application. DiaLOG allows you to create groups of people and organize your topics with channels.
 										With the power of Web Sockets, DiaLOG facilitates instant communication for easy of use.</p>
 									<p>DiaLOG was build using Node.js, Express, Web Sockets, Bootstrap, PUG, MySQL, and a few supporting packages.</p>
-									<a href="https://dialog-application.herokuapp.com/">Link to project</a>
+									<a href="https://dialog-application.herokuapp.com/">Deployed</a>&nbsp;&nbsp;
+									<a href="https://github.com/RFHold/dialog">Github</a>
 								</div>
 							</div>
 						</div>
-						{/* <div className="row">
+						<div className="row">
 							<div className="col-12">
 								<div className="subContainer">
-									<img src="/images/newsscraper.jpg" className="projectImage inlineImage small" alt="News Scraper Logo"></img>
+									<img src="/images/optime.jpg" className="projectImage inlineImage small" alt="Optime Logo"></img>
 
 									<div className="flexBetween">
-										<h3>News Scraper</h3>
-										<a href="https://news-scraper-bcs-app.herokuapp.com/" className="button">Live Project</a>
+										<h3>Optime</h3>
 									</div>
-									<p>This app is a simple demonstration of the power of website scraping. This scraper takes news articles from Motor Trend and stores their titles, excerpts, and links to the full article.
-										This can be useful to store and organize related content such as; notes, favorites, and categories.
-									</p><a href="https://news-scraper-bcs-app.herokuapp.com/">Link to project</a>
+									<p>Optime is a lightweight system designed to take the hassle out of invoicing clients. Optime allows a user to create clients and track 
+										progress on projects and tasks defined my the user. Once Tasks have been made, time can be logged to those tasks adn then invoiced at a later date.</p>
+									<p>Optime uses React, Node.js, Express, MySQL, SCSS, and a some more minor packages.</p>
+									<a href="https://optime-application.herokuapp.com/">Deployed</a>&nbsp;&nbsp;
+									<a href="https://github.com/RFHold/client-invoicer">Github</a>
 								</div>
 							</div>
-						</div> */}
+						</div>
 					</section>
 					<section ref={(el) => this.experienceSection = el} id="experienceSection" className="card">
 						<h2>Experience</h2>
